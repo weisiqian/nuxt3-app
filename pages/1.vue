@@ -6,12 +6,11 @@
 </template>
 
 <script lang="ts" setup>
-import { navigateTo } from '@/utils/common';
+import { navigateTo as navigateTo1 } from '@/utils/common';
+import { navigateTo as navigateTo2 } from '@/composables/common';
 
 const handleNavigate = () => {
-  try {
-    navigateTo('/2')
-  } catch(e){
-  }
+  // navigateTo1('/2')
+  navigateTo2('/2')
 }
 </script>
